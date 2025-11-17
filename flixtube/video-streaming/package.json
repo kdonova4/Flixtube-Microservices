@@ -4,15 +4,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "start:dev": "nodemon src/index.js"
+    "start:dev": "nodemon --legacy-watch ./src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "amqplib": "^0.10.9",
     "express": "^5.0.0-beta.1",
-    "mongodb": "^7.0.0"
+    "wait-port": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
